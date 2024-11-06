@@ -16,15 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from flan.views import acerca, bienvenido,home, inicio, contacto
+from flan.views import acerca, bienvenido, home, inicio, contacto
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
-    path('inicio', inicio, name='inicio'),
-    path('acerca', acerca, name='acerca'),
-    path('bienvenido', bienvenido, name='bienvenido'),
+
+    path('inicio/', inicio, name='inicio'),
+    path('acerca/', acerca, name='acerca'),
+    path('bienvenido/', bienvenido, name='bienvenido'),
     path('', home, name='home'),
     path('contacto/', contacto, name='contacto'),
 
